@@ -30,7 +30,7 @@ class PostController extends Controller
         $post->content=$request->input('content');
         $post->save();
 
-        return redirect()->route('posts.index')->with('flash_message','投稿が完了しました。');
+        return redirect()->route('posts.index')->with('flash_message','投稿が完了しました');
     }
 
     public function show(Post $post){
